@@ -83,7 +83,7 @@
     <div class="card-custom">
 
         <div class="position-relative mb-4">
-            <a href="{{ url('/movie/add') }}" 
+            <a href="{{ url('/add-movie') }}"
                class="btn btn-success position-absolute start-0">
                 + Thêm
             </a>
@@ -107,7 +107,7 @@
                 @foreach($movies as $item)
                 <tr>
                     <td>
-                        <img src="{{ $item->image_link }}" width="60">
+                        <img src="{{ asset('storage/'.$item->image) }}" width="60">
                     </td>
 
                     <td class="fw-bold">
