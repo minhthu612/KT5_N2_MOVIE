@@ -1,16 +1,15 @@
 <x-movie-layout>
     <x-slot name="title">
         Movie
-</x-slot>
     </x-slot>
 
     <div class='list-movie'>
         @foreach($movies as $row)
-            <div class='movie'>
+           <div class='movie'>
                 <a href="{{ url('/movie/'.$row->id) }}">
                     
-                    <img src="{{ $row->image_link }}" 
-                         width="200px" height="250px"><br>
+                    <img src="{{ asset('storage/'.$row->image) }}" 
+                    width="200px" height="250px">
 
                     <b>{{ $row->movie_name_vn }}</b><br/>
 
