@@ -83,7 +83,7 @@
     <div class="card-custom">
 
         <div class="position-relative mb-4">
-            <a href="{{ url('/admin/create') }}" 
+            <a href="{{ url('/movie/add') }}" 
                class="btn btn-success position-absolute start-0">
                 + Thêm
             </a>
